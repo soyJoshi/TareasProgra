@@ -1,30 +1,26 @@
 import random
 
-class Paciente:
-    id = 0
-    nombre = ""
-    ano_nacimiento = 0
-    peso = 0
-    estatura = 0
-    direccion = ""
+class Medico:
+    id: int
+    nombre: str
+    ano_nacimiento: int
+    rfc: str
+    direccion: str
     
-    def __init__(self, nombre, ano_nacimiento, peso, estatura, direccion):
+    def __init__(self, nombre, ano_nacimiento, rfc, direccion):
         self.id = random.randint(1, 1000)
         self.nombre = nombre
         self.ano_nacimiento = ano_nacimiento
-        self.peso = peso
-        self.estatura = estatura
+        self.rfc = rfc
         self.direccion = direccion
-    
-    def mostrar_informacion(self):
+        
+    def info_med(self):
         print("\nId:", self.id)
         print(f"Nombre: {self.nombre}") #Hace lo mismo que la linea 19. La f es de formateado
         print("Año de nacimiento: ", self.ano_nacimiento)
-        print("peso: ", self.peso)
-        print("Estatura: ", self.estatura)
-        print("Dirección: ", self.direccion)        
-            
-            
+        print("rfc: ", self.rfc)
+        print("Dirección: ", self.direccion)  
+        
     # @property
     # def id(self):
     #     return self.id
@@ -35,12 +31,8 @@ class Paciente:
     # def ano_nacimiento(self):
     #     return self.ano_nacimiento
     # @property
-    # def peso(self):
-    #     return self.peso
-    # @property
-    # def estatura(self):
-    #     return self.estatura
+    # def rfc(self):
+    #     return self.rfc
     # @property
     # def direccion(self):
-    #     return self.direccion 
-                
+    #     return self.direccion

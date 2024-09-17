@@ -1,12 +1,14 @@
 import random
+from medico.medico import Medico
+from paciente.paciente import Paciente
 
 class Consulta:
-    id = 0
-    fecha = ""
-    hora = ""
-    consultorio = ""
-    medico = ""
-    paciente = ""
+    id: int
+    fecha: str
+    hora : str
+    consultorio: str
+    medico: Medico
+    paciente: Paciente
     
     
     def __init__(self, fecha_hora, consultorio, medico, paciente):
