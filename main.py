@@ -50,14 +50,23 @@ while True:
         
     elif opcion_usuario =="4":
         hospital.mostrar_medicos() 
+        
     elif opcion_usuario =="5":
-        pass#mostrar medicos 
+        id_eliminar = int(input("Ingrese el ID del paciente a eliminar: "))
+        hospital.eliminar_paciente(id_eliminar)
+        print("Paciente Eliminado correctamente") 
+        
     elif opcion_usuario =="6":
-        pass#mostrar medicos 
+        id_eliminar = int(input("Ingrese el ID del medico a eliminar: "))
+        hospital.eliminar_doctor(id_eliminar)
+        print("Medico Eliminado correctamente")  
+        
     elif opcion_usuario =="7":
         hospital.mostrar_pacientes_menores_de_edad() 
+        
     elif opcion_usuario =="8":
         hospital.mostrar_pacientes_mayores_de_edad()
+        
     elif opcion_usuario == "9":
         print("hasta luego")
         break
