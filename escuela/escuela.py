@@ -48,6 +48,7 @@ class Escuela:
     def listar_estudinates(self):
         print("**ESTUDINATES**")
         for estudiante in self.lista_estudiantes:
+            print("\n")
             print(estudiante.mostrar_info_estudiante())
             
     def listar_maestro(self):

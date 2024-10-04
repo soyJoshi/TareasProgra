@@ -85,7 +85,7 @@ class Menu:
 
 
         while True:
-            print("**MINDBOX**")
+            print("\n**MINDBOX**")
             print("1. Registrar Estudinate")
             print("2. Registrar Maestro")
             print("3. Registrar Materia")
